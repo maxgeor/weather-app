@@ -20,6 +20,10 @@ hbs.registerPartials(partialsPath)
 //Set up static directory to serve
 app.use(express.static(publicDirPath))
 
+app.get('', (req, res) => {
+    res.render('index')
+})
+
 app.get('/index', (req, res) => {
     res.render('index')
 })
