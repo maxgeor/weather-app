@@ -3,30 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather</title>
-        <link rel="stylesheet" href="/css/index.css">
     </head>
     <body>
-        {{>header}}
-        <p id="loading">Type a place in the search bar!</p>
-        <div class="weather-container">
-            <h3>
-                <span>{{place}}</span>
-            </h3>
-            <div class="weather">
-                <div class="temperature-container">
-                    <div class="temperature">
-                        <span class="number">{{temperature}}</span>
-                        <span class="degree">°c</span>
-                    </div>
-                    <div class="feelslike" style="margin: 0 0 1.3rem -0.7rem; display: flex; align-items: flex-start;">
-                        <span style="font-size: 0.7rem; color: rgb(150, 150, 150); line-height: 95%; margin-top: 0.25rem; font-weight: 500;">Feels<br>Like</span>
-                        <span style="font-size: 1.7rem; color: rgb(100, 100, 100); margin-left: 0.4rem;">{{feelslike}}</span>
-                    </div>
-                </div>
-                <p>Chance of rain: {{precip}}%</p>
-            </div>
-        </div>
     </body>
     <script src="/js/app.js"></script>
 </html>
