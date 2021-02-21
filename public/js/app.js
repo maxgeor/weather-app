@@ -1,7 +1,7 @@
-const form = document.querySelector('form')
+const weatherForm = document.querySelector('form')
 const input = document.querySelector('input')
 
-form.addEventListener('submit', (e) => {
+weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const status = document.querySelector('#status')
     status.innerText = "Loading..."
@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) => {
                 const precipEl = document.querySelector('#precip')
                 precipEl.innerText = `Chance of rain: ${precip}%`
                 const iconEl = document.querySelector('#icon')
-                icon.src = weather_icons[0]
+                iconEl.src = weather_icons[0]
             }
         })
     })
