@@ -6,7 +6,7 @@ weatherForm.addEventListener('submit', (e) => {
     const status = document.querySelector('#status')
     status.innerText = "Loading..."
     const location = input.value
-    fetch(`http://localhost:3000/weather?location=${location}`).then((response) => {
+    fetch(`/weather?location=${location}`).then((response) => {
         response.json().then((data) => {
             location.innerText = ""
             if (data.error) {
