@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        {{>header}}
+        <p id="status">Type a place in the search bar!</p>
+        <div class="weather-container">
+            <h3>
+                <span id="place"></span>
+            </h3>
+            <div class="weather">
+                <div class="temperature-container">
+                    <div class="temperature-container-2">
+                        <span id="temperature"></span>
+                        <span class="degree">°c</span>
+                    </div>
+                    <div class="feelslike-container">
+                        <span class="feelslike-text">Feels<br>Like</span>
+                        <span id="feelslike"></span>
+                    </div>
+                </div>
+                <img id="icon" src="" alt="weather icon">
+                <p id="precip">Chance of rain: %</p>
+            </div>
+        </div>
+    </body>
+    <script src="/js/app.js"></script>
+</html>

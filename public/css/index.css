@@ -1,0 +1,117 @@
+body {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(243, 242, 241);
+    height: 100vh;
+}
+
+@media screen and (max-width: 865px) {
+    body {
+        margin: 0 2rem;
+    }
+  }
+  
+/* header component */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+    
+form {
+    display: flex;
+    align-items: ceter;
+    height: 30px;
+}
+
+form input {
+    width: 200px;
+    padding: 0 0.5rem;
+}
+
+form button {
+    margin-left: 0.5rem;
+}
+
+.weather-container {
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 2.5rem 3rem;
+    background-color:rgb(255, 255, 255);
+    border-radius: 40px;
+    box-shadow: 5px 10px;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+h3 span {
+    font-size: 1.5rem;
+    color: rgb(94, 94, 94);
+    line-height: 1;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temperature-container {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.temperature-container-2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0.8rem;
+}
+
+#temperature {
+    font-size: 7rem;
+}
+
+.degree {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.feelslike-container {
+    margin: 0 0 1.3rem -0.7rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feelslike-text {
+    font-size: 0.7rem;
+    color: rgb(150, 150, 150);
+    line-height: 95%;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+#feelslike {
+    font-size: 1.7rem;
+    color: rgb(100, 100, 100);
+    margin-left: 0.4rem;
+}
