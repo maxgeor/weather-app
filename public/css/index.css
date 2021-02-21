@@ -115,3 +115,16 @@ h3 span {
     color: rgb(100, 100, 100);
     margin-left: 0.4rem;
 }
+
+.right-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#icon {
+    width: 70px;
+    border-radius: 15px;
+}
