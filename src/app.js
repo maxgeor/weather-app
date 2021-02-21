@@ -20,16 +20,6 @@ hbs.registerPartials(partialsPath)
 //Set up static directory to serve
 app.use(express.static(publicDirPath))
 
-app.get('', (req, res) => {
-    
-    res.render('index', {
-        city: "Paris",
-        country: "France",
-        weather: "25",
-        feelslike: "27"
-    })
-})
-
 app.get('/index', (req, res) => {
     res.render('index')
 })
@@ -37,6 +27,7 @@ app.get('/index', (req, res) => {
 app.get('/index/*', (req, res) => {
     res.render('404')
 })
+
 app.get('/index.hbs', (req, res) => {
     res.render('index')
 })
